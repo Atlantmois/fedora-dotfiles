@@ -1,0 +1,23 @@
+# Kanso Ink Obsidian — derived from the bundled Kanso Ink theme.
+palette = 0=#1B1E23
+palette = 1=#B78383
+palette = 2=#879A89
+palette = 3=#8F8B78
+palette = 4=#8293A3
+palette = 5=#948A95
+palette = 6=#7E9292
+palette = 7=#B8BCBA
+palette = 8=#626872
+palette = 9=#C49393
+palette = 10=#9AAA9C
+palette = 11=#AAA58F
+palette = 12=#96A6B3
+palette = 13=#A69CA6
+palette = 14=#91A5A5
+palette = 15=#D6D8D6
+background = #14171d
+foreground = #c5c9c7
+cursor-color = #c5c9c7
+cursor-text = #14171d
+selection-background = #22262d
+selection-foreground = #c5c9c7

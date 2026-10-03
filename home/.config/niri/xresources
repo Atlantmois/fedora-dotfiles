@@ -1,0 +1,2 @@
+! Niri eDP-1 uses 2x scale. Fcitx5 X11 candidate windows use Xft.dpi.
+Xft.dpi: 192

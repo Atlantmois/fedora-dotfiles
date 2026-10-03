@@ -1,0 +1,99 @@
+# Kanso Ink Obsidian for Helix; ANSI colors follow the active Ghostty palette.
+# Based on the installed Helix 25.07.1 tokyonight theme, retaining its scopes and modifiers.
+
+attribute = { fg = "light-cyan" }
+comment = { fg = "gray", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "light-yellow" }
+"comment.line.documentation" = { fg = "light-yellow" }
+constant = { fg = "light-yellow" }
+"constant.builtin" = { fg = "light-cyan" }
+"constant.character" = { fg = "light-green" }
+"constant.character.escape" = { fg = "light-magenta" }
+constructor = { fg = "light-cyan" }
+function = { fg = "light-blue", modifiers = ["italic"] }
+"function.builtin" = { fg = "light-cyan" }
+"function.macro" = { fg = "light-cyan" }
+"function.special" = { fg = "light-cyan" }
+keyword = { fg = "magenta", modifiers = ["italic"] }
+"keyword.control" = { fg = "light-magenta" }
+"keyword.control.import" = { fg = "light-cyan" }
+"keyword.control.return" = { fg = "magenta", modifiers = ["italic"] }
+"keyword.directive" = { fg = "light-cyan" }
+"keyword.function" = { fg = "light-magenta" }
+"keyword.operator" = { fg = "light-magenta" }
+label = { fg = "light-blue" }
+namespace = { fg = "light-cyan" }
+operator = { fg = "cyan" }
+punctuation = { fg = "cyan" }
+special = { fg = "light-cyan" }
+string = { fg = "light-green" }
+"string.regexp" = { fg = "light-cyan" }
+"string.special" = { fg = "light-cyan" }
+tag = { fg = "light-magenta" }
+type = { fg = "light-cyan" }
+"type.builtin" = { fg = "light-cyan" }
+"type.enum.variant" = { fg = "light-yellow" }
+variable = { fg = "default" }
+"variable.builtin" = { fg = "light-red" }
+"variable.other.member" = { fg = "green" }
+"variable.parameter" = { fg = "light-yellow", modifiers = ["italic"] }
+
+"markup.bold" = { modifiers = ["bold"] }
+"markup.heading" = { fg = "light-blue", modifiers = ["bold"] }
+"markup.heading.completion" = { bg = "black", fg = "default" }
+"markup.heading.hover" = { bg = "#22262D" }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link" = { fg = "light-blue", underline = { style = "line" } }
+"markup.link.label" = { fg = "light-cyan" }
+"markup.link.text" = { fg = "light-cyan" }
+"markup.link.url" = { underline = { style = "line" } }
+"markup.list" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.normal.completion" = { fg = "gray" }
+"markup.normal.hover" = { fg = "light-gray" }
+"markup.raw" = { fg = "light-cyan" }
+"markup.raw.inline" = { bg = "black", fg = "light-blue" }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+"diff.delta" = { fg = "light-blue" }
+"diff.delta.moved" = { fg = "light-blue" }
+"diff.minus" = { fg = "light-red" }
+"diff.plus" = { fg = "light-green" }
+
+error = { fg = "light-red" }
+warning = { fg = "light-yellow" }
+info = { fg = "light-cyan" }
+hint = { fg = "gray" }
+"diagnostic.error" = { underline = { style = "curl", color = "light-red" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "light-yellow"} }
+"diagnostic.info" = { underline = { style = "curl", color = "light-cyan"} }
+"diagnostic.hint" = { underline = { style = "curl", color = "gray" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"ui.background" = { bg = "default", fg = "default" }
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "light-yellow", modifiers = ["bold"] }
+"ui.cursorline.primary" = { bg = "black" }
+"ui.help" = { bg = "black", fg = "default" }
+"ui.linenr" = { fg = "gray" }
+"ui.linenr.selected" = { fg = "light-gray" }
+"ui.menu" = { bg = "black", fg = "default" }
+"ui.menu.selected" = { bg = "#22262D" }
+"ui.popup" = { bg = "black", fg = "light-blue" }
+"ui.selection" = { bg = "#22262D" }
+"ui.selection.primary" = { bg = "#22262D" }
+"ui.statusline" = { bg = "black", fg = "light-gray" }
+"ui.statusline.inactive" = { bg = "black", fg = "gray" }
+"ui.statusline.normal" = { bg = "light-blue", fg = "black", modifiers = ["bold"] }
+"ui.statusline.insert" = { bg = "light-green", fg = "black", modifiers = ["bold"] }
+"ui.statusline.select" = { bg = "light-magenta", fg = "black", modifiers = ["bold"] }
+"ui.text" = { fg = "default" }
+"ui.text.focus" = { bg = "#22262D" }
+"ui.text.inactive" = { fg = "gray", modifiers = ["italic"] }
+"ui.text.info" = { bg = "black", fg = "default" }
+"ui.text.directory" = { fg = "light-cyan" }
+"ui.virtual.ruler" = { bg = "gray" }
+"ui.virtual.whitespace" = { fg = "gray" }
+"ui.virtual.inlay-hint" = {  bg = "black", fg = "light-cyan" }
+"ui.virtual.jump-label" = {  fg = "light-yellow", modifiers = ["bold"] }
+"ui.window" = { fg = "gray", modifiers = ["bold"] }

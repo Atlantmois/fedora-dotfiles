@@ -1,0 +1,168 @@
+# Kanso Ink Obsidian — Yazi 26.9.1 user theme.
+
+[mgr]
+border_style = { fg = "#4D535C" }
+marker_selected = { fg = "#96A6B3", bg = "#96A6B3" }
+count_selected = { fg = "#14171D", bg = "#96A6B3" }
+
+[indicator]
+current = { fg = "#14171D", bg = "#96A6B3" }
+
+[tabs]
+active = { fg = "#14171D", bg = "#8293A3", bold = true }
+inactive = { fg = "#8F969D", bg = "#1B1E23" }
+
+[mode]
+normal_main = { fg = "#14171D", bg = "#8293A3", bold = true }
+normal_alt = { fg = "#8293A3", bg = "#1B1E23" }
+select_main = { fg = "#14171D", bg = "#948A95", bold = true }
+select_alt = { fg = "#948A95", bg = "#1B1E23" }
+unset_main = { fg = "#14171D", bg = "#B78383", bold = true }
+unset_alt = { fg = "#B78383", bg = "#1B1E23" }
+
+[status]
+overall = { fg = "#8F969D" }
+perm_sep = { fg = "#626872" }
+perm_type = { fg = "#96A6B3" }
+perm_read = { fg = "#8F969D" }
+perm_write = { fg = "#B78383" }
+perm_exec = { fg = "#879A89" }
+progress_label = { fg = "#C5C9C7" }
+progress_normal = { fg = "#879A89", bg = "#4D535C" }
+progress_error = { fg = "#14171D", bg = "#B78383" }
+
+[filetype]
+rules = [
+  { url = "*", is = "orphan", fg = "#B78383" },
+  { url = "*", is = "link", fg = "#7E9292" },
+  { mime = "**/image/*", fg = "#948A95" },
+  { mime = "**/audio/*", fg = "#7E9292" },
+  { mime = "**/video/*", fg = "#8293A3" },
+  { mime = "**/application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#8F8B78" },
+  { mime = "**/application/{pdf,doc,rtf}", fg = "#8F969D" },
+  { mime = "vfs/{absent,stale}", fg = "#626872" },
+  { url = "*", is = "exec", fg = "#879A89" },
+  { url = "*", is = "dummy", bg = "#B78383" },
+  { url = "*/", is = "dummy", bg = "#B78383" },
+  { url = "*/", fg = "#8293A3" },
+]
+
+[icon]
+prepend_dirs = [
+  { name = ".config", text = "", fg = "#8F8B78" },
+  { name = ".git", text = "", fg = "#748484" },
+  { name = ".github", text = "", fg = "#8293A3" },
+  { name = ".npm", text = "", fg = "#879A89" },
+  { name = "Desktop", text = "", fg = "#8293A3" },
+  { name = "Development", text = "", fg = "#8293A3" },
+  { name = "Documents", text = "", fg = "#748484" },
+  { name = "Downloads", text = "", fg = "#7E9292" },
+  { name = "Library", text = "", fg = "#748484" },
+  { name = "Movies", text = "", fg = "#8293A3" },
+  { name = "Music", text = "", fg = "#7E9292" },
+  { name = "Pictures", text = "", fg = "#8293A3" },
+  { name = "Public", text = "", fg = "#748484" },
+  { name = "Videos", text = "", fg = "#8293A3" },
+  { name = "Templates", text = "", fg = "#879A89" },
+]
+
+prepend_files = [
+  { name = ".codespellrc", text = "󰓆", fg = "#879A89" },
+  { name = ".luacheckrc", text = "", fg = "#8293A3" },
+  { name = ".luaurc", text = "", fg = "#8293A3" },
+  { name = ".nuxtrc", text = "󱄆", fg = "#879A89" },
+  { name = "Directory.Build.props", text = "", fg = "#8293A3" },
+  { name = "Directory.Build.targets", text = "", fg = "#8293A3" },
+  { name = "Directory.Packages.props", text = "", fg = "#8293A3" },
+  { name = "ext_typoscript_setup.txt", text = "", fg = "#8F8B78" },
+  { name = "go.mod", text = "", fg = "#7E9292" },
+  { name = "go.sum", text = "", fg = "#7E9292" },
+  { name = "go.work", text = "", fg = "#7E9292" },
+  { name = "hypridle.conf", text = "", fg = "#7E9292" },
+  { name = "hyprland.conf", text = "", fg = "#7E9292" },
+  { name = "hyprlandd.conf", text = "", fg = "#7E9292" },
+  { name = "hyprlock.conf", text = "", fg = "#7E9292" },
+  { name = "hyprpaper.conf", text = "", fg = "#7E9292" },
+  { name = "hyprsunset.conf", text = "", fg = "#7E9292" },
+  { name = "nuxt.config.cjs", text = "󱄆", fg = "#879A89" },
+  { name = "nuxt.config.js", text = "󱄆", fg = "#879A89" },
+  { name = "nuxt.config.mjs", text = "󱄆", fg = "#879A89" },
+  { name = "nuxt.config.ts", text = "󱄆", fg = "#879A89" },
+  { name = "tailwind.config.js", text = "󱏿", fg = "#7E9292" },
+  { name = "tailwind.config.mjs", text = "󱏿", fg = "#7E9292" },
+  { name = "tailwind.config.ts", text = "󱏿", fg = "#7E9292" },
+  { name = "tmux.conf", text = "", fg = "#879A89" },
+  { name = "tmux.conf.local", text = "", fg = "#879A89" },
+  { name = "xdph.conf", text = "", fg = "#7E9292" },
+]
+
+prepend_exts = [
+  { name = "zip", text = "", fg = "#8F8B78" },
+  { name = "7z", text = "", fg = "#8F8B78" },
+  { name = "rar", text = "", fg = "#8F8B78" },
+  { name = "gz", text = "", fg = "#8F8B78" },
+  { name = "bz2", text = "", fg = "#8F8B78" },
+  { name = "xz", text = "", fg = "#8F8B78" },
+  { name = "zst", text = "", fg = "#8F8B78" },
+  { name = "tar", text = "", fg = "#8F8B78" },
+  { name = "tgz", text = "", fg = "#8F8B78" },
+  { name = "png", text = "", fg = "#948A95" },
+  { name = "jpg", text = "", fg = "#948A95" },
+  { name = "jpeg", text = "", fg = "#948A95" },
+  { name = "gif", text = "", fg = "#948A95" },
+  { name = "webp", text = "", fg = "#948A95" },
+  { name = "bmp", text = "", fg = "#948A95" },
+  { name = "svg", text = "󰜡", fg = "#948A95" },
+  { name = "ico", text = "", fg = "#948A95" },
+  { name = "avif", text = "", fg = "#948A95" },
+  { name = "heic", text = "", fg = "#948A95" },
+  { name = "mp3", text = "", fg = "#7E9292" },
+  { name = "flac", text = "", fg = "#7E9292" },
+  { name = "wav", text = "", fg = "#7E9292" },
+  { name = "ogg", text = "", fg = "#7E9292" },
+  { name = "m4a", text = "", fg = "#7E9292" },
+  { name = "aac", text = "", fg = "#7E9292" },
+  { name = "mp4", text = "", fg = "#8293A3" },
+  { name = "mkv", text = "", fg = "#8293A3" },
+  { name = "mov", text = "", fg = "#8293A3" },
+  { name = "webm", text = "", fg = "#8293A3" },
+  { name = "avi", text = "", fg = "#8293A3" },
+  { name = "sh", text = "", fg = "#879A89" },
+  { name = "fish", text = "", fg = "#879A89" },
+  { name = "bash", text = "", fg = "#879A89" },
+  { name = "py", text = "", fg = "#879A89" },
+  { name = "rs", text = "", fg = "#879A89" },
+  { name = "go", text = "", fg = "#879A89" },
+  { name = "lua", text = "", fg = "#879A89" },
+  { name = "js", text = "", fg = "#879A89" },
+  { name = "ts", text = "", fg = "#879A89" },
+  { name = "txt", text = "󰈙", fg = "#8F969D" },
+  { name = "md", text = "", fg = "#8F969D" },
+  { name = "toml", text = "", fg = "#8F969D" },
+  { name = "json", text = "", fg = "#8F969D" },
+  { name = "yaml", text = "", fg = "#8F969D" },
+  { name = "yml", text = "", fg = "#8F969D" },
+  { name = "jsx", text = "", fg = "#7E9292" },
+  { name = "spec.jsx", text = "", fg = "#7E9292" },
+  { name = "test.jsx", text = "", fg = "#7E9292" },
+  { name = "luau", text = "", fg = "#8293A3" },
+  { name = "tmux", text = "", fg = "#879A89" },
+  { name = "tsconfig", text = "", fg = "#8F8B78" },
+  { name = "typ", text = "", fg = "#7E9292" },
+  { name = "typoscript", text = "", fg = "#8F8B78" },
+  { name = "pdf", text = "", fg = "#B78383" },
+]
+
+prepend_conds = [
+  { if = "orphan", text = "", fg = "#B78383" },
+  { if = "link", text = "", fg = "#7E9292" },
+  { if = "block", text = "", fg = "#8F8B78" },
+  { if = "char", text = "", fg = "#8F8B78" },
+  { if = "fifo", text = "", fg = "#8F8B78" },
+  { if = "sock", text = "", fg = "#8F8B78" },
+  { if = "sticky", text = "", fg = "#8F8B78" },
+  { if = "dummy", text = "", fg = "#B78383" },
+  { if = "dir & hovered", text = "", fg = "#8293A3" },
+  { if = "dir", text = "", fg = "#748484" },
+  { if = "exec", text = "", fg = "#879A89" },
+]

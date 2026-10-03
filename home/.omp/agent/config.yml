@@ -1,0 +1,10 @@
+modelRoles:
+  default: deepseek/deepseek-flash
+symbolPreset: nerd
+composer:
+  shape: band
+theme:
+  dark: kanso-ink-obsidian
+setupVersion: 2
+tools:
+  approvalMode: always-ask

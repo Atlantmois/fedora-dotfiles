@@ -1,0 +1,6 @@
+// Noctalia wallpaper palette: muted niri focus ring.
+layout {
+    focus-ring {
+        active-color "{{ colors.outline.default.hex }}"
+    }
+}

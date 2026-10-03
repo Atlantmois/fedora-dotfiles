@@ -1,0 +1,30 @@
+[bar.default]
+background_opacity = 0.70
+# Keep the clock in the center lane; compact status widgets flank it.
+start = ["launcher", "workspaces", "media"]
+center = ["clock"]
+end = ["tray", "clipboard", "network", "volume", "battery", "control-center"]
+
+[shell]
+font_family = "sans-serif"
+
+[shell.panel]
+transparency_mode = "glass"
+
+[notification]
+background_opacity = 0.80
+
+[osd]
+background_opacity = 0.80
+
+[widget.media]
+album_art_only = true
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
+
+[widget.battery]
+show_label = false

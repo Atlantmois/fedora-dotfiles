@@ -1,0 +1,19 @@
+# 当前配置依赖或配套使用的软件；按目标 Fedora 版本检查包名。
+niri
+noctalia
+ghostty
+fish
+starship
+helix
+yazi
+btop
+fcitx5
+fcitx5-rime
+fcitx5-chinese-addons
+fcitx5-configtool
+fzf
+zoxide
+brightnessctl
+playerctl
+
+# 字体、Rime 方案、OMP、Herdr 以及 Helix 的 ty/ruff 语言服务器需另行安装。
