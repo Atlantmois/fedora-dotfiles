@@ -6,7 +6,7 @@ center = ["clock"]
 end = ["tray", "clipboard", "network", "volume", "battery", "control-center"]
 
 [shell]
-font_family = "sans-serif"
+font_family = "鸿蒙黑体"
 
 [shell.panel]
 transparency_mode = "glass"

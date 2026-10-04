@@ -16,6 +16,7 @@
 .config/ghostty/config.ghostty
 .config/ghostty/shaders/cursor_warp.glsl
 .config/ghostty/themes/Kanso Ink Obsidian
+.config/gtk-3.0/settings.ini
 .config/helix/config.toml
 .config/helix/languages.toml
 .config/helix/themes/kanso_ink_obsidian.toml
@@ -29,6 +30,7 @@
 .config/noctalia/templates/niri-focus.kdl
 .config/starship.toml
 .config/theme/kanso-ink-obsidian.toml
+.config/xdg-desktop-portal/niri-portals.conf
 .config/yazi/theme.toml
 .local/share/fcitx5/rime/default.custom.yaml
 .local/share/fcitx5/themes/mellow-graphite-obsidian-lite/README.txt

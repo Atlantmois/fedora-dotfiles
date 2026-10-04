@@ -67,4 +67,4 @@ insert = "bar"         # 插入模式：竖线，vim 惯例
 select = "underline"   # 选择模式：同 normal，避免出现 block 导致轨迹断档
 
 [keys.insert]
-"Win-ret" = "open_below"
+"A-ret" = "open_below"

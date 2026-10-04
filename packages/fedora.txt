@@ -15,5 +15,8 @@ fzf
 zoxide
 brightnessctl
 playerctl
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
+gnome-keyring
 
 # 字体、Rime 方案、OMP、Herdr 以及 Helix 的 ty/ruff 语言服务器需另行安装。
