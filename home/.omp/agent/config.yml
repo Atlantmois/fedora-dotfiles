@@ -6,111 +6,58 @@ composer:
 theme:
   dark: kanso-ink-obsidian
 setupVersion: 2
+
 tools:
-  format: auto
-  approvalMode: write
+  approvalMode: yolo
   approval:
-    read: allow
-    edit: allow
-    bash: prompt
-    eval: prompt
-  intentTracing: true
+    # eval 能绕过 bash.patterns 再启动 shell，直接禁掉最省心
+    eval: deny
+
 bash:
+  # 不自动把 && 组成的复合命令当成已批准
   allowCompoundCommands: false
+
   patterns:
-    - match: "rm -rf *"
+    # ── 绝对不应该自动执行 ──
+    - match: "rm -rf /"
       approval: deny
-    - match: "rm -r *"
+    - match: "rm -rf /*"
       approval: deny
+
     - match: "mkfs*"
       approval: deny
     - match: "wipefs *"
       approval: deny
-    - match: "dd *"
+
+    - match: "curl *|*sh*"
       approval: deny
-    - match: "git reset --hard*"
+    - match: "curl *|*bash*"
       approval: deny
-    - match: "git clean *"
+    - match: "wget *|*sh*"
       approval: deny
-    - match: "git push *--force*"
+    - match: "wget *|*bash*"
       approval: deny
-    - match: "git push *-f*"
-      approval: deny
+
+    # ── 真正重要的操作才问你 ──
     - match: "sudo *"
       approval: prompt
-    - match: "su *"
+
+    - match: "rm -rf *"
       approval: prompt
-    - match: "curl *"
+
+    - match: "dd *"
       approval: prompt
-    - match: "wget *"
+
+    - match: "git reset --hard*"
       approval: prompt
-    - match: "ssh *"
+    - match: "git clean *"
       approval: prompt
-    - match: "scp *"
+    - match: "git push --force*"
       approval: prompt
-    - match: "rsync *"
+
+    - match: "reboot*"
       approval: prompt
-    - match: "git add *"
+    - match: "poweroff*"
       approval: prompt
-    - match: "git commit *"
-      approval: prompt
-    - match: "git push *"
-      approval: prompt
-    - match: "git pull *"
-      approval: prompt
-    - match: "git merge *"
-      approval: prompt
-    - match: "git rebase *"
-      approval: prompt
-    - match: "git checkout *"
-      approval: prompt
-    - match: "git switch *"
-      approval: prompt
-    - match: "git restore *"
-      approval: prompt
-    - match: "pwd"
-      approval: allow
-    - match: "ls*"
-      approval: allow
-    - match: "tree*"
-      approval: allow
-    - match: "cat *"
-      approval: allow
-    - match: "head *"
-      approval: allow
-    - match: "tail *"
-      approval: allow
-    - match: "less *"
-      approval: allow
-    - match: "file *"
-      approval: allow
-    - match: "stat *"
-      approval: allow
-    - match: "which *"
-      approval: allow
-    - match: "type *"
-      approval: allow
-    - match: "command -v *"
-      approval: allow
-    - match: "rg *"
-      approval: allow
-    - match: "grep *"
-      approval: allow
-    - match: "fd *"
-      approval: allow
-    - match: "find *"
-      approval: allow
-    - match: "git status*"
-      approval: allow
-    - match: "git diff*"
-      approval: allow
-    - match: "git log*"
-      approval: allow
-    - match: "git show*"
-      approval: allow
-    - match: "git branch*"
-      approval: allow
-    - match: "git remote -v*"
-      approval: allow
-    - match: "*"
+    - match: "shutdown*"
       approval: prompt

@@ -405,7 +405,8 @@ binds {
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
-
+    Super+Shift+V { toggle-window-floating; }
+    Super+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     // Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Super+Space { spawn "noctalia" "msg" "panel-toggle" "launcher"; }

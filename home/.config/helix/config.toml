@@ -49,6 +49,8 @@ completion-trigger-len = 2
 # 默认 render = false。Python 靠缩进表达结构，这条收益明显。
 [editor.indent-guides]
 render = true
+character = "╎"
+skip-levels = 1
 
 # ── 语言服务器 ───────────────────────────────────────────────────────
 # 当前未启用（Helix 默认 false；下面被注释的那行就是开启方式）。开启后 ty 会把

@@ -97,3 +97,4 @@ hint = { fg = "gray" }
 "ui.virtual.inlay-hint" = {  bg = "black", fg = "light-cyan" }
 "ui.virtual.jump-label" = {  fg = "light-yellow", modifiers = ["bold"] }
 "ui.window" = { fg = "gray", modifiers = ["bold"] }
+"ui.virtual.indent-guide" = { fg = "#4D5358" }
