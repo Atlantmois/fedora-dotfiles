@@ -1,8 +1,9 @@
 [/]
 accent-color='slate'
 color-scheme='prefer-dark'
-document-font-name='鸿蒙黑体 11'
+document-font-name='HarmonyOS Sans 11'
 font-hinting='slight'
-font-name='鸿蒙黑体 11'
+font-name='HarmonyOS Sans 11'
+gtk-enable-primary-paste=true
 show-battery-percentage=true
 toolkit-accessibility=false

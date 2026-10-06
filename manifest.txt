@@ -30,7 +30,6 @@
 .config/noctalia/templates.toml
 .config/noctalia/templates/niri-focus.kdl
 .config/starship.toml
-.config/systemd/user/xdg-desktop-portal-gtk.service.d/50-x11-filechooser.conf
 .config/theme/kanso-ink-obsidian.toml
 .config/xdg-desktop-portal/niri-portals.conf
 .config/yazi/theme.toml

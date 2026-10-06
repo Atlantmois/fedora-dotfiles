@@ -22,4 +22,7 @@ if status is-interactive
     abbr -a dar 'sudo dnf autoremove'
     abbr -a du 'sudo dnf upgrade --refresh'
     abbr -a dl pkgs
+
+    #noctalia
+    abbr -a lwp 'noctalia msg panel-toggle noctalia/mpvpaper:picker'
 end

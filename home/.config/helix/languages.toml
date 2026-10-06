@@ -25,7 +25,7 @@ language-servers = [
   { name = "ruff", only-features = ["diagnostics", "code-action", "format"] }
 ]
 
-auto-format = true
+auto-format = false
 
 
 # ============================================================
